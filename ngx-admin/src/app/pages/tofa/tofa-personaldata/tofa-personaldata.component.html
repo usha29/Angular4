@@ -1,0 +1,18 @@
+<div class="row">
+    <h5 class="data-h5"><b>Personal</b> time</h5>
+  <div class="col-md-12">
+
+    <nb-card>
+      <nb-card-header class="data-hedader">Filter</nb-card-header>
+      <nb-card-body>
+          <div class='form-group'>
+            <app-week (onNewEntryAdded)="selectweek($event)" (change)="weekselected()"></app-week>
+          </div>
+      </nb-card-body>
+    </nb-card>
+  </div>
+  <div class="col-md-12" *ngIf="showSelected">
+      <app-tofa-data [selectedweek]="week"></app-tofa-data>
+    
+  </div>
+</div>

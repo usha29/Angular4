@@ -1,0 +1,61 @@
+<div>
+    <nb-card>
+      <nb-card-header class="data-hedader">TOFA Data for {{selectedweek}}</nb-card-header>
+      <nb-card-body>
+          <div class='row border-between' align='center'>
+            <div class='col-md-3'>
+              <b>Actual Hrs</b>
+
+            </div>
+            <div class='col-md-3'>
+              <b>Actual Avg Hrs</b>
+              <span
+                class="{'label label-success' : actualAvg > 9, 'label label-danger' : actualAvg < 9}">45645
+              </span>
+            </div>
+            <div class='col-md-3'>
+              <b>Adj Hrs</b>
+
+            </div>
+            <div class='col-md-3'>
+              <b>Adj Avg Hrs</b>
+
+            </div>
+          </div>
+          <div class="row">
+  					<div class="outer">
+  						<div class="wrap">
+  							<div class="sub">
+  								<b>Actual Hrs</b>
+                  <!-- <br> <br> <span
+  									ng-class="{'label label-success' : actualAvg > 9, 'label label-danger' : actualAvg < 9}"
+  									style="font-size: 20px">{{totalTofaHrs | number:2}}
+                  </span> -->
+  							</div>
+  							<div class="sub">
+  								<b>Actual Avg Hrs</b><br> <br>
+                  <!-- <span
+  									ng-class="{'label label-success' : actualAvg > 9, 'label label-danger' : actualAvg < 9}"
+  									style="font-size: 20px">{{actualAvg | number:2}}</span> -->
+  							</div>
+  							<div class="sub" ng-show="totalAdjustHrs>0">
+  								<b>Adj Hrs</b><br> <br>
+                  <!-- <span
+  									class="label label-success" style="font-size: 20px">{{totalAdjustHrs}}</span> -->
+  							</div>
+  							<div class="sub" ng-show="totalAdjustHrs>0">
+  								<b>Adj Avg Hrs</b><br> <br>
+                  <!-- <span
+  									ng-class="{'label label-success' : adjAvg > 9, 'label label-danger' : adjAvg < 9}"
+  									style="font-size: 20px">{{(adjAvg| number:2)}}</span> -->
+  							</div>
+  							<!--<div class="sub">Total Hrs<br><br><span class="label label-danger" style="font-size:20px">9.5</span></div>-->
+  					</div>
+  					</div>
+
+  				</div>
+
+
+      </nb-card-body>
+    </nb-card>
+<div>
